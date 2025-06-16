@@ -1,957 +1,429 @@
-{\rtf1\ansi\ansicpg950\cocoartf2822
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset136 PingFangTC-Regular;\f2\fnil\fcharset0 AppleColorEmoji;
-}
-{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;\red203\green203\blue202;
-\red71\green138\blue206;\red141\green213\blue254;\red109\green109\blue109;\red194\green125\blue100;\red109\green115\blue120;
-\red212\green212\blue212;\red167\green197\blue151;\red184\green113\blue248;\red112\green192\blue130;\red245\green123\blue47;
-\red54\green192\blue160;}
-{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c100000\c100000\c100000\c0;\cssrgb\c83320\c83320\c83112;
-\cssrgb\c34146\c61677\c84338;\cssrgb\c61545\c86704\c99884;\cssrgb\c50307\c50306\c50181;\cssrgb\c80772\c56796\c46790;\cssrgb\c50336\c52696\c54531;
-\cssrgb\c86465\c86464\c86248;\cssrgb\c71035\c80830\c65726;\cssrgb\c77746\c54642\c98035;\cssrgb\c50437\c78684\c58115;\cssrgb\c97756\c56070\c23668;
-\cssrgb\c23989\c78963\c69075;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww12720\viewh7240\viewkind0
-\deftab720
-\pard\pardeftab720\partightenfactor0
+ <!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>台語俗諺知多少 | 遊戲開發人：Gloria秀蘭，Shirley秀環＠2025Google紅白</title>
+    <!-- 新增 Favicon 圖示連結 -->
+    <link rel="icon" type="image/jpeg" href="data:image/jpeg;base64,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" />
 
-\f0\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
- <!DOCTYPE html>\
-\pard\pardeftab720\partightenfactor0
-\cf2 <html lang="zh-Hant">\
-<head>\
-    <meta charset="UTF-8">\
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
-    <title>
-\f1 \'a5\'78\'bb\'79\'ab\'55\'bf\'ce\'aa\'be\'a6\'68\'a4\'d6
-\f0  | 
-\f1 \'b9\'43\'c0\'b8\'b6\'7d\'b5\'6f\'a4\'48\'a1\'47
-\f0 Gloria
-\f1 \'a8\'71\'c4\'f5\'a1\'41
-\f0 Shirley
-\f1 \'a8\'71\'c0\'f4\'a2\'49
-\f0 2025Google
-\f1 \'ac\'f5\'a5\'d5
-\f0 </title>\
-    <!-- 
-\f1 \'b7\'73\'bc\'57
-\f0  Favicon 
-\f1 \'b9\'cf\'a5\'dc\'b3\'73\'b5\'b2
-\f0  -->\
-    <link rel="icon" type="image/jpeg" href="data:image/jpeg;base64,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" />\
-\
-    <script src="https://cdn.tailwindcss.com"></script>\
-    <style>\
-        /* 
-\f1 \'a6\'db\'ad\'71\'bf\'c3\'a5\'fa\'ae\'c4\'aa\'47
-\f0  */\
-        .glow-correct \{\
-            box-shadow: 0 0 15px 5px #4ade80; /* 
-\f1 \'ba\'f1\'a6\'e2\'bf\'c3\'a5\'fa
-\f0  */\
-            transform: scale(1.03);\
-            transition: all 0.3s ease-in-out;\
-        \}\
-        .glow-incorrect \{\
-            box-shadow: 0 0 15px 5px #f87171; /* 
-\f1 \'ac\'f5\'a6\'e2\'bf\'c3\'a5\'fa
-\f0  */\
-            transform: scale(0.97);\
-            transition: all 0.3s ease-in-out;\
-            opacity: 0.7;\
-        \}\
-        /* 
-\f1 \'b0\'f2\'a5\'bb\'a5\'64\'a4\'f9\'bc\'cb\'a6\'a1
-\f0  */\
-        .option-card \{\
-            transition: all 0.2s ease-in-out;\
-            cursor: pointer;\
-        \}\
-        .option-card:hover:not(.disabled) \{\
-            transform: translateY(-5px);\
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);\
-        \}\
-        /* 
-\f1 \'b8\'54\'a5\'ce\'ae\'c9\'aa\'ba\'bc\'cb\'a6\'a1
-\f0  */\
-        .disabled \{\
-            cursor: not-allowed;\
-            opacity: 0.8;\
-        \}\
-        /* 
-\f1 \'b0\'f2\'a5\'bb\'ab\'f6\'b6\'73\'bc\'cb\'a6\'a1
-\f0  */\
-        button \{\
-             transition: background-color 0.3s ease;\
-        \}\
-    </style>\
-</head>\
-<body class="bg-gradient-to-br from-blue-100 to-purple-100 min-h-screen flex items-center justify-center p-4 font-sans">\
-\
-    <div id="game-container" class="bg-white rounded-xl shadow-2xl p-6 md:p-10 w-full max-w-2xl">\
-\
-        <!-- 
-\f1 \'b9\'43\'c0\'b8\'b6\'69\'a6\'e6\'a4\'a4\'b5\'65\'ad\'b1
-\f0  -->\
-        <div id="game-area">\
-            <div class="text-center mb-6">\
-                <h1 class="text-3xl font-bold text-indigo-700 mb-2">
-\f1 \'a5\'78\'bb\'79\'ab\'55\'bf\'ce\'aa\'be\'a6\'68\'a4\'d6
-\f0 </h1>\
-                <p id="progress-text" class="text-gray-600">
-\f1 \'b2\'c4
-\f0  1 
-\f1 \'c3\'44
-\f0  / 
-\f1 \'a6\'40
-\f0  10 
-\f1 \'c3\'44
-\f0  | 
-\f1 \'a4\'c0\'bc\'c6
-\f0 : 0</p>\
-                <!-- 
-\f1 \'b7\'73\'bc\'57\'b6\'7d\'b5\'6f\'aa\'cc\'b8\'ea\'b0\'54
-\f0  -->\
-                <p class="text-sm text-gray-500 mt-1">
-\f1 \'b9\'43\'c0\'b8\'b6\'7d\'b5\'6f\'a4\'48\'a1\'47
-\f0 Gloria
-\f1 \'a8\'71\'c4\'f5\'a1\'41
-\f0 Shirley
-\f1 \'a8\'71\'c0\'f4\'a2\'49
-\f0 2025Google
-\f1 \'ac\'f5\'a5\'d5
-\f0 </p>\
-            </div>\
-\
-            <!-- 
-\f1 \'c3\'44\'a5\'d8\'b0\'cf
-\f0  -->\
-            <div class="bg-indigo-50 rounded-lg p-4 mb-6 text-center shadow">\
-                <p id="proverb-taigi" class="text-2xl font-semibold text-indigo-800 mb-1">
-\f1 \'ad\'b9\'a4\'48\'a4\'40\'a4\'66\'a1\'41\'b3\'f8\'a4\'48\'a4\'40\'a4\'e6
-\f0 </p>\
-                <p id="proverb-lomaji" class="text-lg text-indigo-500 italic">Tsia\uc0\u781 h l\'e2ng tsi\u781 t kh\'e1u, p\'f2 l\'e2ng tsi\u781 t t\'e1u</p>\
-            </div>\
-\
-            <!-- 
-\f1 \'bf\'ef\'b6\'b5\'b0\'cf
-\f0  -->\
-            <div id="options-grid" class="grid grid-cols-1 md:grid-cols-2 gap-4">\
-                <!-- 
-\f1 \'bf\'ef\'b6\'b5\'a5\'64\'a4\'f9\'b7\'7c\'a5\'d1
-\f0  JavaScript 
-\f1 \'b0\'ca\'ba\'41\'a5\'cd\'a6\'a8
-\f0  -->\
-            </div>\
-\
-            <!-- 
-\f1 \'a6\'5e\'f5\'58\'b0\'54\'ae\'a7
-\f0  -->\
-            <div id="feedback-message" class="mt-6 text-center text-xl font-semibold h-6"></div>\
-        </div>\
-\
-        <!-- 
-\f1 \'b5\'b2\'aa\'47\'b5\'65\'ad\'b1
-\f0  -->\
-        <div id="results-area" class="hidden text-center">\
-            <h2 class="text-3xl font-bold text-green-600 mb-4">
-\f1 \'b9\'43\'c0\'b8\'b5\'b2\'a7\'f4\'a1\'49
-\f0 </h2>\
-            <p id="final-score" class="text-2xl mb-6">
-\f1 \'b1\'7a\'aa\'ba\'b1\'6f\'a4\'c0\'ac\'4f\'a1\'47
-\f0 80 
-\f1 \'a4\'c0
-\f0 </p>\
-\
-            <h3 class="text-xl font-semibold text-gray-700 mb-3">
-\f1 \'a5\'bb\'a6\'b8\'ac\'44\'be\'d4\'b5\'b2\'aa\'47\'a4\'c0\'aa\'52\'a1\'47
-\f0 </h3>\
-            <div id="results-details" class="text-left bg-gray-50 p-4 rounded-lg max-h-60 overflow-y-auto shadow-inner">\
-                <!-- 
-\f1 \'b5\'b2\'aa\'47\'a4\'c0\'aa\'52\'b7\'7c\'a5\'d1
-\f0  JavaScript 
-\f1 \'b0\'ca\'ba\'41\'a5\'cd\'a6\'a8
-\f0  -->\
-            </div>\
-\
-            <button id="play-again-button" class="mt-8 bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-lg shadow-md text-lg">\
-                
-\f1 \'a6\'41\'a6\'b8\'ac\'44\'be\'d4
-\f0 \
-            </button>\
-        </div>\
-\
-    </div>\
-\
-    <script>\
-        // --- 
-\f1 \'b8\'ea\'ae\'c6\'ae\'77
-\f0  ---\
-        const proverbs = [\
-            // 
-\f1 \'b7\'50\'ae\'a6
-\f0 /
-\f1 \'a6\'58\'a7\'40
-\f0 \
-            \{\
-                proverb_taigi: "
-\f1 \'ad\'b9\'a4\'48\'a4\'40\'a4\'66\'a1\'41\'b3\'f8\'a4\'48\'a4\'40\'a4\'e6
-\f0 ",\
-                proverb_lomaji: "Tsia\uc0\u781 h l\'e2ng tsi\u781 t kh\'e1u, p\'f2 l\'e2ng tsi\u781 t t\'e1u",\
-                category: "
-\f1 \'b7\'50\'ae\'a6
-\f0 /
-\f1 \'a6\'58\'a7\'40
-\f0 ",\
-                options: ["
-\f1 \'a8\'fc\'a4\'48\'c2\'49\'ba\'77\'ae\'a6\'b4\'66\'a1\'41\'c0\'b3\'a5\'5b\'ad\'bf\'a9\'5e\'c1\'d9
-\f0 ", "
-\f1 \'a6\'59\'b6\'ba\'ad\'6e\'a4\'70\'a4\'66\'a1\'41\'b0\'b5\'a8\'c6\'ad\'6e\'a4\'6a\'b6\'71
-\f0 ", "
-\f1 \'ad\'c9\'aa\'46\'a6\'e8\'ad\'6e\'bb\'b0\'a7\'d6\'c1\'d9
-\f0 ", "
-\f1 \'a4\'a3\'ad\'6e\'c0\'48\'ab\'4b\'b1\'b5\'a8\'fc\'a7\'4f\'a4\'48\'aa\'ba\'ad\'b9\'aa\'ab
-\f0 "],\
-                correct_answer: 0,\
-                explanation: "
-\f1 \'a4\'f1\'b3\'eb\'a8\'fc\'a4\'48\'ae\'a6\'b4\'66\'a1\'41\'ad\'6e\'c0\'b4\'b1\'6f\'aa\'be\'ae\'a6\'b9\'cf\'b3\'f8\'a1\'41\'a5\'5b\'ad\'bf\'a9\'5e\'c1\'d9\'a1\'43
-\f0 "\
-            \},\
-            \{\
-                proverb_taigi: "
-\f1 \'a4\'54\'a4\'48\'a6\'40\'a4\'40\'a4\'df\'a1\'41\'af\'51\'b6\'ee\'c5\'dc\'a6\'a8\'aa\'f7
-\f0 ",\
-                proverb_lomaji: "Sann l\'e2ng k\uc0\u257 ng tsi\u781 t sim, oo-th\'f4o p\'ecnn-ts\'f2 kim",\
-                category: "
-\f1 \'b7\'50\'ae\'a6
-\f0 /
-\f1 \'a6\'58\'a7\'40
-\f0 ",\
-                options: ["
-\f1 \'a4\'54\'ad\'d3\'a4\'48\'a4\'40\'b0\'5f\'ab\'f5\'a4\'67\'a4\'f1\'b8\'fb\'a7\'d6
-\f0 ", "
-\f1 \'b9\'ce\'b5\'b2\'a4\'4f\'b6\'71\'a4\'6a\'a1\'41\'a6\'50\'a4\'df\'a8\'f3\'a4\'4f\'b4\'4e\'af\'e0\'a6\'a8\'a5\'5c
-\f0 ", "
-\f1 \'b6\'c2\'a6\'e2\'aa\'ba\'aa\'64\'a4\'67\'ab\'dc\'ad\'c8\'bf\'fa
-\f0 ", "
-\f1 \'a4\'df\'b8\'db\'ab\'68\'c6\'46\'a1\'41\'ac\'e8\'c3\'ab\'b4\'4e\'b7\'7c\'b9\'ea\'b2\'7b
-\f0 "],\
-                correct_answer: 1,\
-                explanation: "
-\f1 \'a4\'f1\'b3\'eb\'a5\'75\'ad\'6e\'a4\'6a\'ae\'61\'a6\'50\'a4\'df\'a8\'f3\'a4\'4f\'a1\'41\'b4\'4e\'af\'e0\'b5\'6f\'b4\'a7\'b7\'a5\'a4\'6a\'aa\'ba\'a4\'4f\'b6\'71\'a1\'41\'a7\'4a\'aa\'41\'a7\'78\'c3\'f8\'a1\'41\'c0\'f2\'b1\'6f\'a6\'a8\'a5\'5c\'a1\'43
-\f0 "\
-            \},\
-            \{\
-                proverb_taigi: "
-\f1 \'a6\'6e\'a4\'df\'a6\'b3\'a6\'6e\'b3\'f8
-\f0 ",\
-                proverb_lomaji: "H\'f3 sim \uc0\u363  h\'f3 p\'f2",\
-                category: "
-\f1 \'b7\'50\'ae\'a6
-\f0 /
-\f1 \'a6\'58\'a7\'40
-\f0 ",\
-                options: ["
-\f1 \'a4\'df\'a6\'61\'b5\'bd\'a8\'7d\'aa\'ba\'a4\'48\'b7\'7c\'a6\'b3\'a6\'6e\'aa\'ba\'a6\'5e\'b3\'f8
-\f0 ", "
-\f1 \'ac\'dd\'a8\'ec\'a4\'df\'c5\'a6\'ad\'6e\'b8\'f2\'c2\'e5\'a5\'cd\'b3\'f8\'a7\'69
-\f0 ", "
-\f1 \'a6\'6e\'a4\'48\'ae\'65\'a9\'f6\'b3\'51\'b4\'db\'ad\'74
-\f0 ", "
-\f1 \'a4\'df\'c5\'a6\'a6\'6e\'a8\'ad\'c5\'e9\'b4\'4e\'a6\'6e
-\f0 "],\
-                correct_answer: 0,\
-                explanation: "
-\f1 \'ab\'fc\'a4\'df\'a6\'73\'b5\'bd\'a9\'c0\'a1\'42\'a6\'68\'b0\'b5\'b5\'bd\'a8\'c6\'a1\'41\'a6\'db\'b5\'4d\'b7\'7c\'a6\'b3\'a6\'6e\'aa\'ba\'b3\'f8\'c0\'b3\'a9\'ce\'b5\'b2\'aa\'47\'a1\'43
-\f0 "\
-            \},\
-             \{\
-                proverb_taigi: "
-\f1 \'b0\'ab\'b8\'f8\'a4\'e2\'a1\'41\'b8\'fb\'c4\'b9\'ad\'b9\'b8\'c9
-\f0 ",\
-                proverb_lomaji: "T\'e0u-kha-tshi\'fa, khah i\'e2nn tsia\uc0\u781 h p\'f3o",\
-                category: "
-\f1 \'b7\'50\'ae\'a6
-\f0 /
-\f1 \'a6\'58\'a7\'40
-\f0 ",\
-                options: ["
-\f1 \'a4\'e2\'b8\'7d\'a6\'68\'c0\'b0\'a6\'a3\'a1\'41\'b3\'d3\'b9\'4c\'a6\'59\'b8\'c9\'ab\'7e
-\f0 ", "
-\f1 \'a6\'68\'b9\'42\'b0\'ca\'a4\'f1\'a6\'59\'b8\'c9\'c3\'c4\'a6\'6e
-\f0 ", "
-\f1 \'a6\'59\'b6\'ba\'ad\'6e\'a5\'ce\'a4\'e2
-\f0 ", "
-\f1 \'c0\'b0\'a6\'a3\'a7\'4f\'a4\'48\'b7\'7c\'a6\'b3\'b8\'c9\'ab\'7e\'a6\'59
-\f0 "],\
-                correct_answer: 0,\
-                explanation: "
-\f1 \'ab\'fc\'a4\'ac\'ac\'db\'c0\'b0\'a6\'a3\'a1\'42\'a4\'c0\'a4\'75\'a6\'58\'a7\'40\'a1\'41\'a4\'f1\'b3\'e6\'be\'61\'a6\'db\'a4\'76\'ae\'49\'c0\'59\'ad\'57\'b7\'46\'a9\'ce\'a8\'cc\'bf\'e0\'a5\'7e\'a6\'62\'b8\'c9\'ab\'7e\'a7\'f3\'a6\'b3\'ae\'c4\'af\'71\'a1\'43
-\f0 "\
-            \},\
-            // 
-\f1 \'b0\'ca\'aa\'ab
-\f0 \
-            \{\
-                proverb_taigi: "
-\f1 \'a4\'fb\'b2\'6f\'a8\'ec\'a5\'5f\'a8\'ca\'b9\'c0\'ac\'4f\'a4\'fb
-\f0 ",\
-                proverb_lomaji: "G\'fb khan k\'e0u Pak-kiann m\uc0\u257  s\u299  g\'fb",\
-                category: "
-\f1 \'b0\'ca\'aa\'ab
-\f0 ",\
-                options: ["
-\f1 \'a4\'fb\'ac\'4f\'ab\'dc\'a9\'54\'b0\'f5\'aa\'ba\'b0\'ca\'aa\'ab
-\f0 ", "
-\f1 \'a4\'48\'aa\'ba\'a5\'bb\'a9\'ca\'c3\'f8\'a5\'48\'a7\'ef\'c5\'dc
-\f0 ", "
-\f1 \'a5\'5f\'a8\'ca\'a6\'b3\'ab\'dc\'a6\'68\'a4\'fb
-\f0 ", "
-\f1 \'b2\'6f\'a4\'fb\'ad\'6e\'a9\'b9\'a5\'5f\'a4\'e8\'a8\'ab
-\f0 "],\
-                correct_answer: 1,\
-                explanation: "
-\f1 \'a4\'f1\'b3\'eb\'a4\'48\'aa\'ba\'ad\'d3\'a9\'ca\'a9\'ce\'a5\'bb\'bd\'e8\'c3\'f8\'a5\'48\'a7\'ef\'c5\'dc\'a1\'41\'a7\'59\'a8\'cf\'c0\'f4\'b9\'d2\'c5\'dc\'a4\'46\'a1\'41\'a5\'bb\'a9\'ca\'a8\'cc\'b5\'4d\'a6\'73\'a6\'62\'a1\'43
-\f0 "\
-            \},\
-            \{\
-                proverb_taigi: "
-\f1 \'c0\'74\'af\'ba\'c5\'be\'b5\'4c\'a7\'c0\'a1\'41\'c5\'be\'af\'ba\'c0\'74\'b2\'ca\'a5\'d6
-\f0 ",\
-                proverb_lomaji: "Ku tshi\'f2 pih b\'f4 bu\'e9, pih tshi\'f2 ku tshoo phu\'ea",\
-                category: "
-\f1 \'b0\'ca\'aa\'ab
-\f0 ",\
-                options: ["
-\f1 \'af\'51\'c0\'74\'a9\'4d\'c5\'be\'ac\'4f\'a6\'6e\'aa\'42\'a4\'cd
-\f0 ", "
-\f1 \'b0\'ca\'aa\'ab\'a4\'a7\'b6\'a1\'a4\'5d\'b7\'7c\'a4\'ac\'ac\'db\'a8\'fa\'af\'ba
-\f0 ", "
-\f1 \'a4\'ad\'a4\'51\'a8\'42\'af\'ba\'a6\'ca\'a8\'42\'a1\'41\'a9\'bc\'a6\'b9\'b3\'a3\'a6\'b3\'af\'ca\'c2\'49
-\f0 ", "
-\f1 \'c0\'74\'b4\'df\'a4\'f1\'c5\'be\'b4\'df\'b5\'77
-\f0 "],\
-                correct_answer: 2,\
-                explanation: "
-\f1 \'a4\'f1\'b3\'eb\'a4\'48\'a4\'a3\'aa\'be\'a6\'db\'a4\'76\'aa\'ba\'af\'ca\'c2\'49\'a1\'41\'a4\'cf\'a6\'d3\'a5\'68\'a8\'fa\'af\'ba\'a7\'4f\'a4\'48\'a6\'50\'bc\'cb\'aa\'ba\'a9\'ce\'ac\'db\'a6\'fc\'aa\'ba\'af\'ca\'c2\'49\'a1\'43
-\f0 "\
-            \},\
-            \{\
-                proverb_taigi: "
-\f1 \'bf\'df\'b9\'ab\'a4\'f0\'b4\'b1\'ad\'b9\'c0\'46\'c3\'b9\'a4\'fd\'aa\'ba\'a6\'cc
-\f0 ",\
-                proverb_lomaji: "Niau-tsh\'ed \uc0\u109 \u772  k\'e1nn tsia\u781 h G\'eem-l\'f4-\'f4ng \'ea b\'ed",\
-                category: "
-\f1 \'b0\'ca\'aa\'ab
-\f0 ",\
-                options: ["
-\f1 \'a6\'d1\'b9\'ab\'a4\'a3\'b4\'b1\'a6\'59\'bf\'df\'ad\'b9
-\f0 ", "
-\f1 \'a4\'f1\'b3\'eb\'a4\'a3\'b4\'b1\'a6\'62\'a4\'d3\'b7\'b3\'c0\'59\'a4\'57\'b0\'ca\'a4\'67
-\f0 ", "
-\f1 \'c0\'46\'c3\'b9\'a4\'fd\'a4\'a3\'b3\'df\'c5\'77\'a6\'d1\'b9\'ab
-\f0 ", "
-\f1 \'a6\'d1\'b9\'ab\'a9\'c8\'af\'ab\'a9\'fa
-\f0 "],\
-                correct_answer: 1,\
-                explanation: "
-\f1 \'a4\'f1\'b3\'eb\'a6\'b3\'a9\'d2\'ac\'c8\'c4\'df\'a1\'41\'a4\'a3\'b4\'b1\'ab\'5f\'a5\'c7\'a6\'b3\'c5\'76\'b6\'d5\'a9\'ce\'b7\'53\'a4\'a3\'b0\'5f\'aa\'ba\'a4\'48\'a1\'43
-\f0 "\
-            \},\
-             \{\
-                proverb_taigi: "
-\f1 \'c0\'6e\'a5\'4a\'c5\'a5\'b9\'70
-\f0 ",\
-                proverb_lomaji: "Ah-\'e1 thiann lu\'ee",\
-                category: "
-\f1 \'b0\'ca\'aa\'ab
-\f0 ",\
-                options: ["
-\f1 \'c0\'6e\'a4\'6c\'b3\'df\'c5\'77\'c5\'a5\'a5\'b4\'b9\'70
-\f0 ", "
-\f1 \'a7\'ce\'ae\'65\'a4\'48\'a4\'cf\'c0\'b3\'bf\'f0\'b6\'77
-\f0 ", "
-\f1 \'a4\'f1\'b3\'eb\'c5\'a5\'a4\'a3\'c0\'b4\'a1\'42\'aa\'ac\'aa\'70\'a5\'7e
-\f0 ", "
-\f1 \'a4\'55\'ab\'42\'a4\'d1\'c0\'6e\'a4\'6c\'b7\'7c\'a5\'73
-\f0 "],\
-                correct_answer: 2,\
-                explanation: "
-\f1 \'a7\'ce\'ae\'65\'a4\'48\'b9\'ef\'ac\'59\'a5\'f3\'a8\'c6\'a7\'b9\'a5\'fe\'c5\'a5\'a4\'a3\'c0\'b4\'a9\'ce\'b7\'64\'a4\'a3\'b2\'4d\'b7\'a1\'aa\'ac\'aa\'70\'a1\'41\'a6\'b3\'c5\'a5\'a8\'53\'a6\'b3\'c0\'b4\'a1\'43
-\f0 "\
-            \},\
-            // 
-\f1 \'ae\'61\'a4\'48
-\f0 \
-            \{\
-                proverb_taigi: "
-\f1 \'a4\'f7\'a5\'c0\'af\'6b\'a6\'5f\'aa\'f8\'ac\'79\'a4\'f4
-\f0 ",\
-                proverb_lomaji: "P\uc0\u275 -b\'fa thi\'e0nn ki\'e1nn t\u110 \u770 g l\'e2u tsu\'ed",\
-                category: "
-\f1 \'ae\'61\'a4\'48
-\f0 ",\
-                options: ["
-\f1 \'a4\'f7\'a5\'c0\'b9\'b3\'ac\'79\'a4\'f4\'a4\'40\'bc\'cb\'b1\'60\'ac\'79\'b0\'ca
-\f0 ", "
-\f1 \'a4\'f7\'a5\'c0\'b9\'ef\'a4\'6c\'a4\'6b\'aa\'ba\'b7\'52\'a5\'c3\'a4\'a3\'a4\'ee\'ae\'a7
-\f0 ", "
-\f1 \'a4\'70\'ab\'c4\'a4\'6c\'b3\'df\'c5\'77\'aa\'b1\'a4\'f4
-\f0 ", "
-\f1 \'a4\'f7\'a5\'c0\'aa\'ba\'b7\'52\'ab\'dc\'aa\'f8
-\f0 "],\
-                correct_answer: 1,\
-                explanation: "
-\f1 \'a4\'f1\'b3\'eb\'a4\'f7\'a5\'c0\'b9\'ef\'a4\'6c\'a4\'6b\'aa\'ba\'c3\'f6\'b7\'52\'a6\'70\'a6\'50\'aa\'f8\'ac\'79\'aa\'ba\'b7\'cb\'a4\'f4\'a4\'40\'bc\'cb\'a1\'41\'a5\'c3\'b5\'4c\'a4\'ee\'ba\'c9\'a1\'42\'b3\'73\'ba\'f8\'a4\'a3\'b5\'b4\'a1\'43
-\f0 "\
-            \},\
-             \{\
-                proverb_taigi: "
-\f1 \'b9\'7d\'a6\'5f\'a4\'f0\'aa\'be\'a4\'f7\'a5\'c0\'ae\'c9
-\f0 ",\
-                proverb_lomaji: "Tsh\uc0\u299  ki\'e1nn \u109 \u772  tsai p\u275 -b\'fa s\'ee",\
-                category: "
-\f1 \'ae\'61\'a4\'48
-\f0 ",\
-                options: ["
-\f1 \'be\'69\'a8\'7c\'a4\'6c\'a4\'6b\'ab\'e1\'a4\'7e\'af\'e0\'c5\'e9\'b7\'7c\'a4\'f7\'a5\'c0\'aa\'ba\'a8\'af\'b3\'d2
-\f0 ", "
-\f1 \'a4\'a3\'aa\'be\'b9\'44\'a4\'f7\'a5\'c0\'a4\'b0\'bb\'f2\'ae\'c9\'ad\'d4\'be\'69\'a4\'70\'ab\'c4
-\f0 ", "
-\f1 \'be\'69\'a4\'70\'ab\'c4\'ab\'dc\'aa\'e1\'ae\'c9\'b6\'a1
-\f0 ", "
-\f1 \'a4\'f7\'a5\'c0\'a4\'a3\'aa\'be\'b9\'44\'a4\'70\'ab\'c4\'a6\'f3\'ae\'c9\'aa\'f8\'a4\'6a
-\f0 "],\
-                correct_answer: 0,\
-                explanation: "
-\f1 \'ab\'fc\'a6\'db\'a4\'76\'ac\'b0\'a4\'48\'a4\'f7\'a5\'c0\'a1\'41\'b8\'67\'be\'fa\'be\'69\'a8\'e0\'a8\'7c\'a4\'6b\'aa\'ba\'a8\'af\'ad\'57\'ab\'e1\'a1\'41\'a4\'7e\'af\'e0\'af\'75\'a5\'bf\'c5\'e9\'b7\'7c\'b7\'ed\'a6\'7e\'a6\'db\'a4\'76\'a4\'f7\'a5\'c0\'be\'69\'a8\'7c\'aa\'ba\'a8\'af\'b3\'d2\'bb\'50\'a5\'49\'a5\'58\'a1\'43
-\f0 "\
-            \},\
-            \{\
-                proverb_taigi: "
-\f1 \'a5\'53\'a7\'cc\'ad\'59\'a6\'50\'a4\'df\'a1\'41\'af\'51\'b6\'ee\'c5\'dc\'a6\'a8\'aa\'f7
-\f0 ",\
-                proverb_lomaji: "Hiann-t\uc0\u299  n\u257  k\u257 ng sim, oo-th\'f4o p\'ecnn-ts\'f2 kim",\
-                category: "
-\f1 \'ae\'61\'a4\'48
-\f0 ",\
-                options: ["
-\f1 \'a5\'53\'a7\'cc\'a6\'50\'a4\'df\'a8\'f3\'a4\'4f\'a1\'41\'b4\'4e\'af\'e0\'a7\'4a\'aa\'41\'b8\'55\'c3\'f8
-\f0 ", "
-\f1 \'a5\'53\'a7\'cc\'a4\'40\'b0\'5f\'ab\'f5\'a4\'67\'a5\'69\'a5\'48\'a7\'e4\'a8\'ec\'b6\'c0\'aa\'f7
-\f0 ", "
-\f1 \'b6\'c2\'a6\'e2\'aa\'ba\'aa\'64\'a4\'67\'ab\'dc\'ad\'c8\'bf\'fa
-\f0 ", "
-\f1 \'a5\'53\'a7\'cc\'b7\'50\'b1\'a1\'a6\'6e\'b7\'7c\'c5\'dc\'a6\'b3\'bf\'fa
-\f0 "],\
-                correct_answer: 0,\
-                explanation: "
-\f1 \'bb\'50\'a1\'75\'a4\'54\'a4\'48\'a6\'40\'a4\'40\'a4\'df\'a1\'41\'af\'51\'b6\'ee\'c5\'dc\'a6\'a8\'aa\'f7\'a1\'76\'b7\'4e\'ab\'e4\'ac\'db\'aa\'f1\'a1\'41\'b1\'6a\'bd\'d5\'a5\'53\'a7\'cc\'a4\'a7\'b6\'a1\'b9\'ce\'b5\'b2\'aa\'ba\'ad\'ab\'ad\'6e\'a9\'ca\'a1\'43
-\f0 "\
-            \},\
-             \{\
-                proverb_taigi: "
-\f1 \'c4\'59\'a9\'78\'a9\'b2\'a5\'58\'ab\'70\'b8\'e9\'a1\'46\'c4\'59\'a4\'f7\'a5\'c0\'a5\'58\'aa\'fc\'a8\'bd\'a4\'a3\'b9\'46
-\f0 ",\
-                proverb_lomaji: "Gi\'e2m kuann-h\'fa tshut k\uc0\u257 u tsha\u781 t; gi\'e2m p\u275 -b\'fa tshut a-l\'ed-put-ta\u781 t",\
-                category: "
-\f1 \'ae\'61\'a4\'48
-\f0 ",\
-                options: ["
-\f1 \'a9\'78\'a9\'b2\'a4\'d3\'c4\'59\'ae\'e6\'a1\'41\'a4\'70\'b0\'bd\'b7\'7c\'c5\'dc\'a6\'68
-\f0 ", "
-\f1 \'a4\'f7\'a5\'c0\'a4\'d3\'c4\'59\'ae\'e6\'a1\'41\'a4\'70\'ab\'c4\'a4\'cf\'a6\'d3\'a4\'a3\'a6\'a8\'a7\'f7
-\f0 ", "
-\f1 \'a9\'78\'ad\'fb\'a9\'4d\'a4\'f7\'a5\'c0\'b3\'a3\'ab\'dc\'c4\'59\'ae\'e6
-\f0 ", "
-\f1 \'a4\'70\'b0\'bd\'a9\'4d\'a4\'a3\'a6\'a8\'a7\'f7\'aa\'ba\'a4\'70\'ab\'c4\'ac\'4f\'a4\'f7\'a5\'c0\'b3\'79\'a6\'a8\'aa\'ba
-\f0 "],\
-                correct_answer: 1,\
-                explanation: "
-\f1 \'ab\'fc\'b9\'4c\'a9\'f3\'c4\'59\'ad\'56\'aa\'ba\'ba\'de\'b2\'7a\'a9\'ce\'b1\'d0\'a8\'7c\'a4\'e8\'a6\'a1\'a1\'41\'a5\'69\'af\'e0\'be\'c9\'ad\'50\'a4\'cf\'ae\'c4\'aa\'47\'a1\'41\'b5\'4c\'aa\'6b\'b9\'46\'a8\'ec\'b9\'77\'b4\'c1\'aa\'ba\'a5\'d8\'bc\'d0\'a1\'43
-\f0 "\
-            \},\
-            // 
-\f1 \'be\'c7\'b2\'df
-\f0 \
-            \{\
-                proverb_taigi: "
-\f1 \'ac\'a1\'a8\'ec\'a6\'d1\'a1\'41\'be\'c7\'a8\'ec\'a6\'d1
-\f0 ",\
-                proverb_lomaji: "Ua\uc0\u781 h k\'e0u l\u257 u, o\u781 h k\'e0u l\u257 u",\
-                category: "
-\f1 \'be\'c7\'b2\'df
-\f0 ",\
-                options: ["
-\f1 \'a4\'48\'a6\'d1\'a4\'46\'b4\'4e\'a4\'a3\'af\'e0\'be\'c7\'b2\'df
-\f0 ", "
-\f1 \'be\'c7\'b5\'4c\'a4\'ee\'b9\'d2\'a1\'41\'c0\'b3\'b2\'d7\'a8\'ad\'be\'c7\'b2\'df
-\f0 ", "
-\f1 \'ac\'a1\'b1\'6f\'b6\'56\'a6\'d1\'be\'c7\'b1\'6f\'b6\'56\'a6\'68
-\f0 ", "
-\f1 \'be\'c7\'b2\'df\'c5\'fd\'a4\'48\'aa\'f8\'b9\'d8
-\f0 "],\
-                correct_answer: 1,\
-                explanation: "
-\f1 \'ab\'fc\'be\'c7\'b2\'df\'ac\'4f\'a5\'c3\'b5\'4c\'a4\'ee\'b9\'d2\'aa\'ba\'a1\'41\'a7\'59\'a8\'cf\'a6\'7e\'ac\'f6\'a4\'6a\'a4\'46\'a1\'41\'a4\'5d\'c0\'b3\'b8\'d3\'ab\'f9\'c4\'f2\'be\'c7\'b2\'df\'b7\'73\'aa\'be\'a1\'43
-\f0 "\
-            \},\
-            \{\
-                proverb_taigi: "
-\f1 \'aa\'f1\'a6\'b6\'aa\'cc\'a8\'aa\'a1\'41\'aa\'f1\'be\'a5\'aa\'cc\'b6\'c2
-\f0 ",\
-                proverb_lomaji: "K\uc0\u299 n tsu tsi\'e1 tshiah, k\u299 n ba\u781 k tsi\'e1 hik",\
-                category: "
-\f1 \'be\'c7\'b2\'df
-\f0 ",\
-                options: ["
-\f1 \'c0\'f4\'b9\'d2\'b9\'ef\'a4\'48\'aa\'ba\'bc\'76\'c5\'54\'ab\'dc\'a4\'6a
-\f0 ", "
-\f1 \'ac\'f5\'a6\'e2\'a9\'4d\'b6\'c2\'a6\'e2\'ac\'4f\'ad\'ab\'ad\'6e\'aa\'ba\'c3\'43\'a6\'e2
-\f0 ", "
-\f1 \'be\'61\'aa\'f1\'b2\'b9\'ac\'e2\'b7\'7c\'c5\'dc\'ac\'f5
-\f0 ", "
-\f1 \'a4\'a3\'ad\'6e\'be\'61\'aa\'f1\'be\'a5\'a4\'f4
-\f0 "],\
-                correct_answer: 0,\
-                explanation: "
-\f1 \'a4\'f1\'b3\'eb\'c0\'f4\'b9\'d2\'b7\'7c\'bc\'76\'c5\'54\'a4\'48\'aa\'ba\'b2\'df\'a9\'ca\'a1\'41\'b8\'f2\'a6\'6e\'aa\'ba\'ba\'5d\'bc\'cb\'be\'c7\'b2\'df\'b7\'7c\'c5\'dc\'a6\'6e\'a1\'41\'b8\'f2\'c3\'61\'aa\'ba\'ba\'5d\'bc\'cb\'be\'c7\'b2\'df\'b7\'7c\'c5\'dc\'c3\'61\'a1\'43
-\f0 "\
-            \},\
-            \{\
-                proverb_taigi: "
-\f1 \'a7\'a4\'a6\'d3\'a8\'a5\'a1\'41\'a4\'a3\'a6\'70\'b0\'5f\'a6\'d3\'a6\'e6
-\f0 ",\
-                proverb_lomaji: "Ts\uc0\u275  j\'ee gi\'e2n, put j\'fb kh\'ed j\'ee h\'eeng",\
-                category: "
-\f1 \'be\'c7\'b2\'df
-\f0 ",\
-                options: ["
-\f1 \'a7\'a4\'b5\'db\'bb\'a1\'b8\'dc\'a4\'f1\'b8\'fb\'b5\'ce\'aa\'41
-\f0 ", "
-\f1 \'bb\'50\'a8\'e4\'aa\'c5\'bd\'cd\'a1\'41\'a4\'a3\'a6\'70\'b9\'ea\'bb\'da\'a6\'e6\'b0\'ca
-\f0 ", "
-\f1 \'a6\'e6\'b0\'ca\'a4\'a7\'ab\'65\'ad\'6e\'a5\'fd\'b0\'51\'bd\'d7
-\f0 ", "
-\f1 \'a8\'ab\'b8\'f4\'a4\'f1\'a7\'a4\'b5\'db\'a6\'6e
-\f0 "],\
-                correct_answer: 1,\
-                explanation: "
-\f1 \'ab\'fc\'bb\'50\'a8\'e4\'a5\'fa\'bb\'a1\'a4\'a3\'b0\'b5\'a1\'41\'a4\'a3\'a6\'70\'b9\'ea\'bb\'da\'a5\'49\'bd\'d1\'a6\'e6\'b0\'ca\'a5\'68\'b9\'ea\'bd\'ee\'a1\'43
-\f0 "\
-            \},\
-             \{\
-                proverb_taigi: "
-\f1 \'ba\'f2\'a8\'c6\'bc\'65\'bf\'ec
-\f0 ",\
-                proverb_lomaji: "K\'edn s\uc0\u363  khuan p\u257 n",\
-                category: "
-\f1 \'be\'c7\'b2\'df
-\f0 ",\
-                options: ["
-\f1 \'ba\'f2\'ab\'e6\'aa\'ba\'a8\'c6\'b1\'a1\'ad\'6e\'ba\'43\'ba\'43\'b3\'42\'b2\'7a
-\f0 ", "
-\f1 \'a8\'c6\'b1\'a1\'ab\'dc\'a6\'68\'ad\'6e\'a5\'5b\'a7\'d6\'b3\'74\'ab\'d7
-\f0 ", "
-\f1 \'bc\'65\'ae\'65\'a6\'61\'b3\'42\'b2\'7a\'a8\'c6\'b1\'a1
-\f0 ", "
-\f1 \'b3\'42\'b2\'7a\'a8\'c6\'b1\'a1\'ad\'6e\'a6\'b3\'ae\'c4\'b2\'76
-\f0 "],\
-                correct_answer: 0,\
-                explanation: "
-\f1 \'ab\'fc\'b6\'56\'ac\'4f\'ba\'f2\'ab\'e6\'aa\'ba\'a8\'c6\'b1\'a1\'a1\'41\'b6\'56\'ad\'6e\'a8\'49\'b5\'db\'a1\'42\'a7\'4e\'c0\'52\'a1\'42\'a6\'b3\'b1\'f8\'b2\'7a\'a6\'61\'b3\'42\'b2\'7a\'a1\'41\'a4\'a3\'a5\'69\'be\'de\'a4\'a7\'b9\'4c\'ab\'e6\'a1\'43
-\f0 "\
-            \},\
-             \{\
-                proverb_taigi: "
-\f1 \'b4\'d7\'b3\'bb\'b0\'b5\'a8\'ec\'ac\'79\'a6\'bd\'a1\'41\'b4\'d7\'b8\'f8\'b6\'fb\'a8\'ec\'ac\'79\'b2\'43
-\f0 ",\
-                proverb_lomaji: "P\'eann-t\'edng ts\'f2 k\'e0u l\'e2u ku\uc0\u257 nn, p\'eann-kha hi\'e2m k\'e0u l\'e2u nu\u257 ",\
-                category: "
-\f1 \'be\'c7\'b2\'df
-\f0 ",\
-                options: ["
-\f1 \'a5\'78\'a4\'57\'aa\'ed\'ba\'74\'ab\'dc\'a8\'af\'ad\'57\'a1\'41\'a5\'78\'a4\'55\'a7\'e5\'b5\'fb\'ab\'dc\'bb\'b4\'c3\'50
-\f0 ", "
-\f1 \'a4\'d1\'ae\'f0\'bc\'f6\'ae\'65\'a9\'f6\'ac\'79\'a6\'bd\'ac\'79\'a4\'66\'a4\'f4
-\f0 ", "
-\f1 \'b6\'fb\'b1\'f3\'a7\'4f\'a4\'48\'ae\'65\'a9\'f6\'a4\'66\'b4\'f7
-\f0 ", "
-\f1 \'a6\'62\'b4\'d7\'a4\'6c\'a4\'55\'a4\'f1\'b8\'fb\'b2\'44\'a7\'d6
-\f0 "],\
-                correct_answer: 0,\
-                explanation: "
-\f1 \'a4\'f1\'b3\'eb\'b0\'b5\'a8\'c6\'aa\'ba\'a4\'48\'a8\'af\'ad\'57\'a5\'49\'a5\'58\'a1\'41\'ae\'c7\'c6\'5b\'a7\'e5\'b5\'fb\'aa\'ba\'a4\'48\'ab\'6f\'a5\'75\'b7\'7c\'a5\'58\'a4\'40\'b1\'69\'bc\'4c\'a1\'41\'a4\'a3\'aa\'be\'c5\'e9\'bd\'cc\'a1\'43
-\f0 "\
-            \},\
-            \{\
-                proverb_taigi: "
-\f1 \'a5\'bc\'be\'e5\'be\'70\'b2\'ee\'a1\'41\'b6\'fb\'b7\'cb\'b9\'69
-\f0 ",\
-                proverb_lomaji: "Bu\uc0\u275 -hi\'e1u s\'e1i ts\'fbn, hi\'e2m khe e\u781 h",\
-                category: "
-\f1 \'be\'c7\'b2\'df
-\f0 ",\
-                options: ["
-\f1 \'a4\'a3\'b7\'7c\'b6\'7d\'b2\'ee\'aa\'ba\'a4\'48\'b6\'fb\'aa\'65\'b9\'44\'a4\'d3\'af\'b6
-\f0 ", "
-\f1 \'a4\'f1\'b3\'eb\'a6\'db\'a4\'76\'af\'e0\'a4\'4f\'a4\'a3\'a8\'ac\'ab\'6f\'a9\'c7\'b8\'6f\'ab\'c8\'c6\'5b\'b1\'f8\'a5\'f3
-\f0 ", "
-\f1 \'b6\'7d\'b2\'ee\'ac\'4f\'ab\'dc\'a7\'78\'c3\'f8\'aa\'ba\'a7\'de\'b3\'4e
-\f0 ", "
-\f1 \'aa\'65\'b9\'44\'a4\'d3\'af\'b6\'b2\'ee\'a4\'a3\'a6\'6e\'b6\'7d
-\f0 "],\
-                correct_answer: 1,\
-                explanation: "
-\f1 \'a4\'f1\'b3\'eb\'a6\'db\'a4\'76\'a7\'de\'b3\'4e\'a9\'ce\'af\'e0\'a4\'4f\'a4\'a3\'a8\'ac\'a1\'41\'ab\'6f\'a9\'c7\'b8\'6f\'a4\'75\'a8\'e3\'a9\'ce\'c0\'f4\'b9\'d2\'a4\'a3\'a6\'6e\'a1\'43
-\f0 "\
-            \},\
-            \{\
-                proverb_taigi: "
-\f1 \'c5\'aa\'a5\'55\'a1\'41\'b7\'52\'b9\'b3\'ad\'b9\'a6\'cc\'b6\'ba
-\f0 ",\
-                proverb_lomaji: "Tha\uc0\u781 k-tsheh, \'e0i tshi\u363 nn tsia\u781 h b\'ed-p\u110 \u772 g",\
-                category: "
-\f1 \'be\'c7\'b2\'df
-\f0 ",\
-                options: ["
-\f1 \'c5\'aa\'ae\'d1\'ad\'6e\'b9\'b3\'a6\'59\'b6\'ba\'a4\'40\'bc\'cb\'a1\'41\'a6\'a8\'ac\'b0\'a4\'e9\'b1\'60\'a5\'b2\'bb\'dd
-\f0 ", "
-\f1 \'c5\'aa\'ae\'d1\'aa\'ba\'ae\'c9\'ad\'d4\'ad\'6e\'a6\'59\'b6\'ba
-\f0 ", "
-\f1 \'a6\'cc\'b6\'ba\'a9\'4d\'ae\'d1\'a5\'bb\'a4\'40\'bc\'cb\'ad\'ab\'ad\'6e
-\f0 ", "
-\f1 \'c5\'aa\'ae\'d1\'a5\'69\'a5\'48\'b0\'74\'b6\'ba\'a6\'59
-\f0 "],\
-                correct_answer: 0,\
-                explanation: "
-\f1 \'a4\'f1\'b3\'eb\'c5\'aa\'ae\'d1\'a8\'44\'be\'c7\'b0\'dd\'ad\'6e\'b9\'b3\'a8\'43\'a4\'d1\'a6\'59\'b6\'ba\'a4\'40\'bc\'cb\'a1\'41\'ab\'f9\'a4\'a7\'a5\'48\'ab\'ed\'a1\'41\'a6\'a8\'ac\'b0\'a5\'cd\'ac\'a1\'a4\'a4\'a4\'a3\'a5\'69\'a9\'ce\'af\'ca\'aa\'ba\'a4\'40\'b3\'a1\'a4\'c0\'a1\'43
-\f0 "\
-            \},\
-             \{\
-                proverb_taigi: "
-\f1 \'a5\'b7\'c2\'5f\'a4\'e2\'b0\'a9\'a1\'41\'c4\'41\'ad\'cb\'ab\'69
-\f0 ",\
-                proverb_lomaji: "Phah t\uc0\u110 \u772 g tshi\'fa-kut, tian-t\'f3 i\'f3ng",\
-                category: "
-\f1 \'be\'c7\'b2\'df
-\f0 ",\
-                options: ["
-\f1 \'a4\'e2\'c2\'5f\'b1\'bc\'a4\'cf\'a6\'d3\'a7\'f3\'a6\'b3\'a4\'4f\'ae\'f0
-\f0 ", "
-\f1 \'a4\'f1\'b3\'eb\'b6\'56\'ae\'c0\'b6\'56\'ab\'69\'a1\'41\'a4\'a3\'a6\'5d\'a5\'a2\'b1\'d1\'a6\'d3\'ae\'f0\'be\'6b
-\f0 ", "
-\f1 \'b0\'a9\'c0\'59\'c2\'5f\'a4\'46\'ad\'6e\'ab\'69\'b4\'b1
-\f0 ", "
-\f1 \'a5\'b4\'ac\'5b\'ad\'6e\'a4\'70\'a4\'df\'a4\'e2\'b0\'a9
-\f0 "],\
-                correct_answer: 1,\
-                explanation: "
-\f1 \'a4\'f1\'b3\'eb\'be\'fa\'b8\'67\'ae\'c0\'a7\'e9\'a5\'a2\'b1\'d1\'ab\'e1\'a1\'41\'a4\'cf\'a6\'d3\'a7\'f3\'a5\'5b\'be\'c4\'b5\'6f\'a1\'42\'a7\'f3\'a5\'5b\'b0\'ed\'b1\'6a\'a1\'43
-\f0 "\
-            \}\
-        ];\
-\
-        // --- 
-\f1 \'b9\'43\'c0\'b8\'aa\'ac\'ba\'41\'c5\'dc\'bc\'c6
-\f0  ---\
-        let currentProverbs = []; // 
-\f1 \'b7\'ed\'ab\'65\'b9\'43\'c0\'b8\'aa\'ba
-\f0 10
-\f1 \'b9\'44\'c3\'44\'a5\'d8
-\f0 \
-        let currentQuestionIndex = 0;\
-        let score = 0;\
-        let userAnswers = []; // 
-\f1 \'b0\'4f\'bf\'fd\'a8\'cf\'a5\'ce\'aa\'cc\'b5\'aa\'ae\'d7
-\f0  [\{ proverb_taigi, userAnswer, correctAnswer, isCorrect \}]\
-\
-        // --- DOM 
-\f1 \'a4\'b8\'af\'c0
-\f0  ---\
-        const gameArea = document.getElementById('game-area');\
-        const resultsArea = document.getElementById('results-area');\
-        const progressText = document.getElementById('progress-text');\
-        const proverbTaigiEl = document.getElementById('proverb-taigi');\
-        const proverbLomajiEl = document.getElementById('proverb-lomaji');\
-        const optionsGrid = document.getElementById('options-grid');\
-        const feedbackMessage = document.getElementById('feedback-message');\
-        const finalScoreEl = document.getElementById('final-score');\
-        const resultsDetails = document.getElementById('results-details');\
-        const playAgainButton = document.getElementById('play-again-button');\
-\
-        // --- 
-\f1 \'a8\'e7\'bc\'c6
-\f0  ---\
-\
-        // 
-\f1 \'ac\'7e\'b5\'50\'a8\'e7\'bc\'c6
-\f0  (Fisher-Yates Shuffle)\
-        function shuffleArray(array) \{\
-            for (let i = array.length - 1; i > 0; i--) \{\
-                const j = Math.floor(Math.random() * (i + 1));\
-                [array[i], array[j]] = [array[j], array[i]]; // 
-\f1 \'a5\'e6\'b4\'ab\'a4\'b8\'af\'c0
-\f0 \
-            \}\
-            return array;\
-        \}\
-\
-        // 
-\f1 \'aa\'ec\'a9\'6c\'a4\'c6\'a9\'ce\'ad\'ab\'b7\'73\'b6\'7d\'a9\'6c\'b9\'43\'c0\'b8
-\f0 \
-        function initGame() \{\
-            // 
-\f1 \'b1\'71\'a7\'b9\'be\'e3\'c3\'44\'ae\'77\'a4\'a4\'c0\'48\'be\'f7\'bf\'ef\'a8\'fa
-\f0 10
-\f1 \'c3\'44
-\f0 \
-            currentProverbs = shuffleArray([...proverbs]).slice(0, 10);\
-            currentQuestionIndex = 0;\
-            score = 0;\
-            userAnswers = [];\
-\
-            // 
-\f1 \'c5\'e3\'a5\'dc\'b9\'43\'c0\'b8\'b0\'cf\'b0\'ec\'a1\'41\'c1\'f4\'c2\'c3\'b5\'b2\'aa\'47\'b0\'cf\'b0\'ec
-\f0 \
-            gameArea.classList.remove('hidden');\
-            resultsArea.classList.add('hidden');\
-            feedbackMessage.textContent = ''; // 
-\f1 \'b2\'4d\'aa\'c5\'a6\'5e\'f5\'58\'b0\'54\'ae\'a7
-\f0 \
-\
-            displayQuestion();\
-        \}\
-\
-        // 
-\f1 \'c5\'e3\'a5\'dc\'b7\'ed\'ab\'65\'c3\'44\'a5\'d8\'a9\'4d\'bf\'ef\'b6\'b5
-\f0 \
-        function displayQuestion() \{\
-            if (currentQuestionIndex >= currentProverbs.length) \{\
-                showResults();\
-                return;\
-            \}\
-\
-            const currentQuestion = currentProverbs[currentQuestionIndex];\
-\
-            // 
-\f1 \'a7\'f3\'b7\'73\'c3\'44\'a5\'d8\'a4\'e5\'a6\'72
-\f0 \
-            proverbTaigiEl.textContent = currentQuestion.proverb_taigi;\
-            proverbLomajiEl.textContent = currentQuestion.proverb_lomaji;\
-\
-            // 
-\f1 \'a7\'f3\'b7\'73\'b6\'69\'ab\'d7\'b1\'f8
-\f0 \
-            progressText.textContent = `
-\f1 \'b2\'c4
-\f0  $\{currentQuestionIndex + 1\} 
-\f1 \'c3\'44
-\f0  / 
-\f1 \'a6\'40
-\f0  $\{currentProverbs.length\} 
-\f1 \'c3\'44
-\f0  | 
-\f1 \'a4\'c0\'bc\'c6
-\f0 : $\{score\}`;\
-\
-            // 
-\f1 \'b2\'4d\'aa\'c5\'a8\'c3\'a5\'cd\'a6\'a8\'bf\'ef\'b6\'b5\'a5\'64\'a4\'f9
-\f0 \
-            optionsGrid.innerHTML = '';\
-            // 
-\f1 \'c0\'48\'be\'f7\'b1\'c6\'a6\'43\'bf\'ef\'b6\'b5
-\f0  (
-\f1 \'a5\'69\'bf\'ef\'a1\'41\'a6\'70\'aa\'47\'a7\'c6\'b1\'e6\'a8\'43\'a6\'b8\'bf\'ef\'b6\'b5\'b6\'b6\'a7\'c7\'a4\'a3\'a6\'50
-\f0 )\
-            // const shuffledOptions = shuffleArray([...currentQuestion.options]);\
-            // const correctIndex = shuffledOptions.indexOf(currentQuestion.options[currentQuestion.correct_answer]);\
-\
-            currentQuestion.options.forEach((option, index) => \{\
-                const card = document.createElement('button'); // 
-\f1 \'a7\'ef\'a6\'a8
-\f0  button 
-\f1 \'a4\'e8\'ab\'4b\'b3\'42\'b2\'7a\'c2\'49\'c0\'bb\'a9\'4d\'b8\'54\'a5\'ce
-\f0 \
-                card.classList.add('option-card', 'bg-white', 'p-4', 'rounded-lg', 'shadow', 'text-gray-700', 'hover:bg-indigo-100', 'focus:outline-none', 'focus:ring-2', 'focus:ring-indigo-400');\
-                card.textContent = option;\
-                card.dataset.index = index; // 
-\f1 \'b1\'4e\'ad\'ec\'a9\'6c\'af\'c1\'a4\'de\'a6\'73\'c0\'78\'a6\'62
-\f0  data 
-\f1 \'c4\'dd\'a9\'ca\'a4\'a4
-\f0 \
-                card.onclick = () => handleAnswer(index, card);\
-                optionsGrid.appendChild(card);\
-            \});\
-\
-             feedbackMessage.textContent = ''; // 
-\f1 \'b2\'4d\'aa\'c5\'a4\'57\'a4\'40\'c3\'44\'aa\'ba\'a6\'5e\'f5\'58
-\f0 \
-        \}\
-\
-        // 
-\f1 \'b3\'42\'b2\'7a\'a8\'cf\'a5\'ce\'aa\'cc\'b5\'aa\'ae\'d7
-\f0 \
-        function handleAnswer(selectedIndex, selectedCard) \{\
-            // 
-\f1 \'a8\'be\'a4\'ee\'ad\'ab\'bd\'c6\'c2\'49\'c0\'bb
-\f0 \
-            const optionCards = optionsGrid.querySelectorAll('.option-card');\
-            optionCards.forEach(card => card.disabled = true); // 
-\f1 \'b8\'54\'a5\'ce\'a9\'d2\'a6\'b3\'ab\'f6\'b6\'73
-\f0 \
-            optionCards.forEach(card => card.classList.add('disabled')); // 
-\f1 \'b2\'4b\'a5\'5b\'b5\'f8\'c4\'b1\'b8\'54\'a5\'ce\'bc\'cb\'a6\'a1
-\f0 \
-\
-            const currentQuestion = currentProverbs[currentQuestionIndex];\
-            const correctIndex = currentQuestion.correct_answer;\
-            const isCorrect = selectedIndex === correctIndex;\
-\
-            // 
-\f1 \'b0\'4f\'bf\'fd\'b5\'aa\'ae\'d7
-\f0 \
-            userAnswers.push(\{\
-                proverb_taigi: currentQuestion.proverb_taigi,\
-                proverb_lomaji: currentQuestion.proverb_lomaji,\
-                userAnswer: currentQuestion.options[selectedIndex],\
-                correctAnswerText: currentQuestion.options[correctIndex],\
-                explanation: currentQuestion.explanation,\
-                isCorrect: isCorrect\
-            \});\
-\
-            // 
-\f1 \'c5\'e3\'a5\'dc\'a6\'5e\'f5\'58\'a9\'4d\'ae\'c4\'aa\'47
-\f0 \
-            if (isCorrect) \{\
-                score += 10; // 
-\f1 \'a8\'43\'c3\'44
-\f0 10
-\f1 \'a4\'c0
-\f0 \
-                selectedCard.classList.add('glow-correct', 'border-green-500', 'border-2');\
-                selectedCard.classList.remove('bg-white', 'hover:bg-indigo-100');\
-                selectedCard.classList.add('bg-green-100');\
-                feedbackMessage.textContent = '
-\f1 \'b5\'aa\'b9\'ef\'a4\'46\'a1\'49
-\f0  
-\f2 \uc0\u55356 \u57225 
-\f0  ' + currentQuestion.explanation;\
-                feedbackMessage.classList.remove('text-red-500');\
-                feedbackMessage.classList.add('text-green-600');\
-            \} else \{\
-                selectedCard.classList.add('glow-incorrect', 'border-red-500', 'border-2');\
-                 selectedCard.classList.remove('bg-white', 'hover:bg-indigo-100');\
-                 selectedCard.classList.add('bg-red-100');\
-                feedbackMessage.textContent = '
-\f1 \'b5\'aa\'bf\'f9\'a4\'46
-\f0 ... 
-\f2 \uc0\u55358 \u56596 
-\f0  
-\f1 \'a5\'bf\'bd\'54\'b5\'aa\'ae\'d7\'ac\'4f\'a1\'47
-\f0 ' + currentQuestion.options[correctIndex];\
-                feedbackMessage.classList.remove('text-green-600');\
-                feedbackMessage.classList.add('text-red-500');\
-\
-                // 
-\f1 \'a6\'50\'ae\'c9\'bc\'d0\'a5\'dc\'a5\'bf\'bd\'54\'b5\'aa\'ae\'d7
-\f0  (
-\f1 \'a5\'69\'bf\'ef
-\f0 )\
-                const correctCard = optionsGrid.querySelector(`.option-card[data-index='$\{correctIndex\}']`);\
-                 if(correctCard) \{\
-                     correctCard.classList.add('border-green-500', 'border-2', 'bg-green-50');\
-                     correctCard.classList.remove('bg-white', 'hover:bg-indigo-100');\
-                 \}\
-            \}\
-\
-            // 
-\f1 \'a7\'f3\'b7\'73\'a4\'c0\'bc\'c6\'c5\'e3\'a5\'dc
-\f0 \
-            progressText.textContent = `
-\f1 \'b2\'c4
-\f0  $\{currentQuestionIndex + 1\} 
-\f1 \'c3\'44
-\f0  / 
-\f1 \'a6\'40
-\f0  $\{currentProverbs.length\} 
-\f1 \'c3\'44
-\f0  | 
-\f1 \'a4\'c0\'bc\'c6
-\f0 : $\{score\}`;\
-\
-\
-            // 
-\f1 \'b5\'75\'bc\'c8\'a9\'b5\'bf\'f0\'ab\'e1\'b6\'69\'a4\'4a\'a4\'55\'a4\'40\'c3\'44
-\f0 \
-            setTimeout(() => \{\
-                currentQuestionIndex++;\
-                displayQuestion();\
-                 // 
-\f1 \'ab\'ec\'b4\'5f\'ab\'f6\'b6\'73\'aa\'ac\'ba\'41
-\f0  (
-\f1 \'a6\'62
-\f0  displayQuestion 
-\f1 \'a4\'ba\'b3\'a1\'b7\'7c\'ad\'ab\'b7\'73\'a5\'cd\'a6\'a8\'a1\'41\'a9\'d2\'a5\'48\'b3\'6f\'b8\'cc\'a4\'a3\'a5\'ce\'ab\'ec\'b4\'5f
-\f0 )\
-            \}, 2500); // 
-\f1 \'a9\'b5\'bf\'f0
-\f0  2.5 
-\f1 \'ac\'ed
-\f0 \
-        \}\
-\
-        // 
-\f1 \'c5\'e3\'a5\'dc\'b3\'cc\'b2\'d7\'b5\'b2\'aa\'47
-\f0 \
-        function showResults() \{\
-            gameArea.classList.add('hidden');\
-            resultsArea.classList.remove('hidden');\
-\
-            finalScoreEl.textContent = `
-\f1 \'b1\'7a\'aa\'ba\'b1\'6f\'a4\'c0\'ac\'4f\'a1\'47
-\f0 $\{score\} / $\{currentProverbs.length * 10\} 
-\f1 \'a4\'c0
-\f0 `;\
-\
-            // 
-\f1 \'a5\'cd\'a6\'a8\'b5\'b2\'aa\'47\'a4\'c0\'aa\'52
-\f0 \
-            resultsDetails.innerHTML = ''; // 
-\f1 \'b2\'4d\'aa\'c5\'c2\'c2\'aa\'ba\'b5\'b2\'aa\'47
-\f0 \
-            userAnswers.forEach((result, index) => \{\
-                const resultItem = document.createElement('div');\
-                resultItem.classList.add('mb-4', 'pb-4', 'border-b', 'border-gray-200');\
-                resultItem.innerHTML = `\
-                    <p class="font-semibold">$\{index + 1\}. $\{result.proverb_taigi\} ($\{result.proverb_lomaji\})</p>\
-                    <p class="text-sm $\{result.isCorrect ? 'text-green-600' : 'text-red-600'\}">\
-                        
-\f1 \'b1\'7a\'aa\'ba\'b5\'aa\'ae\'d7\'a1\'47
-\f0 $\{result.userAnswer\} $\{result.isCorrect ? '\uc0\u10004 ' : '\uc0\u10008 '\}\
-                    </p>\
-                    $\{!result.isCorrect ? `<p class="text-sm text-blue-600">
-\f1 \'a5\'bf\'bd\'54\'b5\'aa\'ae\'d7\'a1\'47
-\f0 $\{result.correctAnswerText\}</p>` : ''\}\
-                     <p class="text-sm text-gray-500">
-\f1 \'b8\'d1\'c4\'c0\'a1\'47
-\f0 $\{result.explanation\}</p>\
-                `;\
-                resultsDetails.appendChild(resultItem);\
-            \});\
-        \}\
-\
-        // --- 
-\f1 \'a8\'c6\'a5\'f3\'ba\'ca\'c5\'a5
-\f0  ---\
-        playAgainButton.addEventListener('click', initGame);\
-\
-        // --- 
-\f1 \'b9\'43\'c0\'b8\'b6\'7d\'a9\'6c
-\f0  ---\
-        initGame();\
-\
-    </script>\
-\
-</body>\
-</html>\
-\
-}
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* 自訂螢光效果 */
+        .glow-correct {
+            box-shadow: 0 0 15px 5px #4ade80; /* 綠色螢光 */
+            transform: scale(1.03);
+            transition: all 0.3s ease-in-out;
+        }
+        .glow-incorrect {
+            box-shadow: 0 0 15px 5px #f87171; /* 紅色螢光 */
+            transform: scale(0.97);
+            transition: all 0.3s ease-in-out;
+            opacity: 0.7;
+        }
+        /* 基本卡片樣式 */
+        .option-card {
+            transition: all 0.2s ease-in-out;
+            cursor: pointer;
+        }
+        .option-card:hover:not(.disabled) {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        /* 禁用時的樣式 */
+        .disabled {
+            cursor: not-allowed;
+            opacity: 0.8;
+        }
+        /* 基本按鈕樣式 */
+        button {
+             transition: background-color 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-blue-100 to-purple-100 min-h-screen flex items-center justify-center p-4 font-sans">
+
+    <div id="game-container" class="bg-white rounded-xl shadow-2xl p-6 md:p-10 w-full max-w-2xl">
+
+        <!-- 遊戲進行中畫面 -->
+        <div id="game-area">
+            <div class="text-center mb-6">
+                <h1 class="text-3xl font-bold text-indigo-700 mb-2">台語俗諺知多少</h1>
+                <p id="progress-text" class="text-gray-600">第 1 題 / 共 10 題 | 分數: 0</p>
+                <!-- 新增開發者資訊 -->
+                <p class="text-sm text-gray-500 mt-1">遊戲開發人：Gloria秀蘭，Shirley秀環＠2025Google紅白</p>
+            </div>
+
+            <!-- 題目區 -->
+            <div class="bg-indigo-50 rounded-lg p-4 mb-6 text-center shadow">
+                <p id="proverb-taigi" class="text-2xl font-semibold text-indigo-800 mb-1">食人一口，報人一斗</p>
+                <p id="proverb-lomaji" class="text-lg text-indigo-500 italic">Tsia̍h lâng tsi̍t kháu, pò lâng tsi̍t táu</p>
+            </div>
+
+            <!-- 選項區 -->
+            <div id="options-grid" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <!-- 選項卡片會由 JavaScript 動態生成 -->
+            </div>
+
+            <!-- 回饋訊息 -->
+            <div id="feedback-message" class="mt-6 text-center text-xl font-semibold h-6"></div>
+        </div>
+
+        <!-- 結果畫面 -->
+        <div id="results-area" class="hidden text-center">
+            <h2 class="text-3xl font-bold text-green-600 mb-4">遊戲結束！</h2>
+            <p id="final-score" class="text-2xl mb-6">您的得分是：80 分</p>
+
+            <h3 class="text-xl font-semibold text-gray-700 mb-3">本次挑戰結果分析：</h3>
+            <div id="results-details" class="text-left bg-gray-50 p-4 rounded-lg max-h-60 overflow-y-auto shadow-inner">
+                <!-- 結果分析會由 JavaScript 動態生成 -->
+            </div>
+
+            <button id="play-again-button" class="mt-8 bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-lg shadow-md text-lg">
+                再次挑戰
+            </button>
+        </div>
+
+    </div>
+
+    <script>
+        // --- 資料庫 ---
+        const proverbs = [
+            // 感恩/合作
+            {
+                proverb_taigi: "食人一口，報人一斗",
+                proverb_lomaji: "Tsia̍h lâng tsi̍t kháu, pò lâng tsi̍t táu",
+                category: "感恩/合作",
+                options: ["受人點滴恩惠，應加倍奉還", "吃飯要小口，做事要大量", "借東西要趕快還", "不要隨便接受別人的食物"],
+                correct_answer: 0,
+                explanation: "比喻受人恩惠，要懂得知恩圖報，加倍奉還。"
+            },
+            {
+                proverb_taigi: "三人共一心，烏塗變成金",
+                proverb_lomaji: "Sann lâng kāng tsi̍t sim, oo-thôo pìnn-tsò kim",
+                category: "感恩/合作",
+                options: ["三個人一起挖土比較快", "團結力量大，同心協力就能成功", "黑色的泥土很值錢", "心誠則靈，祈禱就會實現"],
+                correct_answer: 1,
+                explanation: "比喻只要大家同心協力，就能發揮極大的力量，克服困難，獲得成功。"
+            },
+            {
+                proverb_taigi: "好心有好報",
+                proverb_lomaji: "Hó sim ū hó pò",
+                category: "感恩/合作",
+                options: ["心地善良的人會有好的回報", "看到心臟要跟醫生報告", "好人容易被欺負", "心臟好身體就好"],
+                correct_answer: 0,
+                explanation: "指心存善念、多做善事，自然會有好的報應或結果。"
+            },
+             {
+                proverb_taigi: "鬥跤手，較贏食補",
+                proverb_lomaji: "Tàu-kha-tshiú, khah iânn tsia̍h póo",
+                category: "感恩/合作",
+                options: ["手腳多幫忙，勝過吃補品", "多運動比吃補藥好", "吃飯要用手", "幫忙別人會有補品吃"],
+                correct_answer: 0,
+                explanation: "指互相幫忙、分工合作，比單靠自己埋頭苦幹或依賴外在補品更有效益。"
+            },
+            // 動物
+            {
+                proverb_taigi: "牛牽到北京嘛是牛",
+                proverb_lomaji: "Gû khan kàu Pak-kiann mā sī gû",
+                category: "動物",
+                options: ["牛是很固執的動物", "人的本性難以改變", "北京有很多牛", "牽牛要往北方走"],
+                correct_answer: 1,
+                explanation: "比喻人的個性或本質難以改變，即使環境變了，本性依然存在。"
+            },
+            {
+                proverb_taigi: "龜笑鱉無尾，鱉笑龜粗皮",
+                proverb_lomaji: "Ku tshiò pih bô bué, pih tshiò ku tshoo phuê",
+                category: "動物",
+                options: ["烏龜和鱉是好朋友", "動物之間也會互相取笑", "五十步笑百步，彼此都有缺點", "龜殼比鱉殼硬"],
+                correct_answer: 2,
+                explanation: "比喻人不知自己的缺點，反而去取笑別人同樣的或相似的缺點。"
+            },
+            {
+                proverb_taigi: "貓鼠毋敢食閻羅王的米",
+                proverb_lomaji: "Niau-tshí m̄ kánn tsia̍h Gîm-lô-ông ê bí",
+                category: "動物",
+                options: ["老鼠不敢吃貓食", "比喻不敢在太歲頭上動土", "閻羅王不喜歡老鼠", "老鼠怕神明"],
+                correct_answer: 1,
+                explanation: "比喻有所畏懼，不敢冒犯有權勢或惹不起的人。"
+            },
+             {
+                proverb_taigi: "鴨仔聽雷",
+                proverb_lomaji: "Ah-á thiann luî",
+                category: "動物",
+                options: ["鴨子喜歡聽打雷", "形容人反應遲鈍", "比喻聽不懂、狀況外", "下雨天鴨子會叫"],
+                correct_answer: 2,
+                explanation: "形容人對某件事完全聽不懂或搞不清楚狀況，有聽沒有懂。"
+            },
+            // 家人
+            {
+                proverb_taigi: "父母疼囝長流水",
+                proverb_lomaji: "Pē-bú thiànn kiánn tn̂g lâu tsuí",
+                category: "家人",
+                options: ["父母像流水一樣常流動", "父母對子女的愛永不止息", "小孩子喜歡玩水", "父母的愛很長"],
+                correct_answer: 1,
+                explanation: "比喻父母對子女的關愛如同長流的溪水一樣，永無止盡、連綿不絕。"
+            },
+             {
+                proverb_taigi: "飼囝毋知父母時",
+                proverb_lomaji: "Tshī kiánn m̄ tsai pē-bú sî",
+                category: "家人",
+                options: ["養育子女後才能體會父母的辛勞", "不知道父母什麼時候養小孩", "養小孩很花時間", "父母不知道小孩何時長大"],
+                correct_answer: 0,
+                explanation: "指自己為人父母，經歷養兒育女的辛苦後，才能真正體會當年自己父母養育的辛勞與付出。"
+            },
+            {
+                proverb_taigi: "兄弟若同心，烏塗變成金",
+                proverb_lomaji: "Hiann-tī nā kāng sim, oo-thôo pìnn-tsò kim",
+                category: "家人",
+                options: ["兄弟同心協力，就能克服萬難", "兄弟一起挖土可以找到黃金", "黑色的泥土很值錢", "兄弟感情好會變有錢"],
+                correct_answer: 0,
+                explanation: "與「三人共一心，烏塗變成金」意思相近，強調兄弟之間團結的重要性。"
+            },
+             {
+                proverb_taigi: "嚴官府出厚賊；嚴父母出阿里不達",
+                proverb_lomaji: "Giâm kuann-hú tshut kāu tsha̍t; giâm pē-bú tshut a-lí-put-ta̍t",
+                category: "家人",
+                options: ["官府太嚴格，小偷會變多", "父母太嚴格，小孩反而不成材", "官員和父母都很嚴格", "小偷和不成材的小孩是父母造成的"],
+                correct_answer: 1,
+                explanation: "指過於嚴苛的管理或教育方式，可能導致反效果，無法達到預期的目標。"
+            },
+            // 學習
+            {
+                proverb_taigi: "活到老，學到老",
+                proverb_lomaji: "Ua̍h kàu lāu, o̍h kàu lāu",
+                category: "學習",
+                options: ["人老了就不能學習", "學無止境，應終身學習", "活得越老學得越多", "學習讓人長壽"],
+                correct_answer: 1,
+                explanation: "指學習是永無止境的，即使年紀大了，也應該持續學習新知。"
+            },
+            {
+                proverb_taigi: "近朱者赤，近墨者黑",
+                proverb_lomaji: "Kīn tsu tsiá tshiah, kīn ba̍k tsiá hik",
+                category: "學習",
+                options: ["環境對人的影響很大", "紅色和黑色是重要的顏色", "靠近硃砂會變紅", "不要靠近墨水"],
+                correct_answer: 0,
+                explanation: "比喻環境會影響人的習性，跟好的榜樣學習會變好，跟壞的榜樣學習會變壞。"
+            },
+            {
+                proverb_taigi: "坐而言，不如起而行",
+                proverb_lomaji: "Tsē jî giân, put jû khí jî hîng",
+                category: "學習",
+                options: ["坐著說話比較舒服", "與其空談，不如實際行動", "行動之前要先討論", "走路比坐著好"],
+                correct_answer: 1,
+                explanation: "指與其光說不做，不如實際付諸行動去實踐。"
+            },
+             {
+                proverb_taigi: "緊事寬辦",
+                proverb_lomaji: "Kín sū khuan pān",
+                category: "學習",
+                options: ["緊急的事情要慢慢處理", "事情很多要加快速度", "寬容地處理事情", "處理事情要有效率"],
+                correct_answer: 0,
+                explanation: "指越是緊急的事情，越要沉著、冷靜、有條理地處理，不可操之過急。"
+            },
+             {
+                proverb_taigi: "棚頂做到流汗，棚跤嫌到流涎",
+                proverb_lomaji: "Pênn-tíng tsò kàu lâu kuānn, pênn-kha hiâm kàu lâu nuā",
+                category: "學習",
+                options: ["台上表演很辛苦，台下批評很輕鬆", "天氣熱容易流汗流口水", "嫌棄別人容易口渴", "在棚子下比較涼快"],
+                correct_answer: 0,
+                explanation: "比喻做事的人辛苦付出，旁觀批評的人卻只會出一張嘴，不知體諒。"
+            },
+            {
+                proverb_taigi: "未曉駛船，嫌溪隘",
+                proverb_lomaji: "Buē-hiáu sái tsûn, hiâm khe e̍h",
+                category: "學習",
+                options: ["不會開船的人嫌河道太窄", "比喻自己能力不足卻怪罪客觀條件", "開船是很困難的技術", "河道太窄船不好開"],
+                correct_answer: 1,
+                explanation: "比喻自己技術或能力不足，卻怪罪工具或環境不好。"
+            },
+            {
+                proverb_taigi: "讀冊，愛像食米飯",
+                proverb_lomaji: "Tha̍k-tsheh, ài tshiūnn tsia̍h bí-pn̄g",
+                category: "學習",
+                options: ["讀書要像吃飯一樣，成為日常必需", "讀書的時候要吃飯", "米飯和書本一樣重要", "讀書可以配飯吃"],
+                correct_answer: 0,
+                explanation: "比喻讀書求學問要像每天吃飯一樣，持之以恆，成為生活中不可或缺的一部分。"
+            },
+             {
+                proverb_taigi: "扑斷手骨，顛倒勇",
+                proverb_lomaji: "Phah tn̄g tshiú-kut, tian-tó ióng",
+                category: "學習",
+                options: ["手斷掉反而更有力氣", "比喻越挫越勇，不因失敗而氣餒", "骨頭斷了要勇敢", "打架要小心手骨"],
+                correct_answer: 1,
+                explanation: "比喻歷經挫折失敗後，反而更加奮發、更加堅強。"
+            }
+        ];
+
+        // --- 遊戲狀態變數 ---
+        let currentProverbs = []; // 當前遊戲的10道題目
+        let currentQuestionIndex = 0;
+        let score = 0;
+        let userAnswers = []; // 記錄使用者答案 [{ proverb_taigi, userAnswer, correctAnswer, isCorrect }]
+
+        // --- DOM 元素 ---
+        const gameArea = document.getElementById('game-area');
+        const resultsArea = document.getElementById('results-area');
+        const progressText = document.getElementById('progress-text');
+        const proverbTaigiEl = document.getElementById('proverb-taigi');
+        const proverbLomajiEl = document.getElementById('proverb-lomaji');
+        const optionsGrid = document.getElementById('options-grid');
+        const feedbackMessage = document.getElementById('feedback-message');
+        const finalScoreEl = document.getElementById('final-score');
+        const resultsDetails = document.getElementById('results-details');
+        const playAgainButton = document.getElementById('play-again-button');
+
+        // --- 函數 ---
+
+        // 洗牌函數 (Fisher-Yates Shuffle)
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]]; // 交換元素
+            }
+            return array;
+        }
+
+        // 初始化或重新開始遊戲
+        function initGame() {
+            // 從完整題庫中隨機選取10題
+            currentProverbs = shuffleArray([...proverbs]).slice(0, 10);
+            currentQuestionIndex = 0;
+            score = 0;
+            userAnswers = [];
+
+            // 顯示遊戲區域，隱藏結果區域
+            gameArea.classList.remove('hidden');
+            resultsArea.classList.add('hidden');
+            feedbackMessage.textContent = ''; // 清空回饋訊息
+
+            displayQuestion();
+        }
+
+        // 顯示當前題目和選項
+        function displayQuestion() {
+            if (currentQuestionIndex >= currentProverbs.length) {
+                showResults();
+                return;
+            }
+
+            const currentQuestion = currentProverbs[currentQuestionIndex];
+
+            // 更新題目文字
+            proverbTaigiEl.textContent = currentQuestion.proverb_taigi;
+            proverbLomajiEl.textContent = currentQuestion.proverb_lomaji;
+
+            // 更新進度條
+            progressText.textContent = `第 ${currentQuestionIndex + 1} 題 / 共 ${currentProverbs.length} 題 | 分數: ${score}`;
+
+            // 清空並生成選項卡片
+            optionsGrid.innerHTML = '';
+            // 隨機排列選項 (可選，如果希望每次選項順序不同)
+            // const shuffledOptions = shuffleArray([...currentQuestion.options]);
+            // const correctIndex = shuffledOptions.indexOf(currentQuestion.options[currentQuestion.correct_answer]);
+
+            currentQuestion.options.forEach((option, index) => {
+                const card = document.createElement('button'); // 改成 button 方便處理點擊和禁用
+                card.classList.add('option-card', 'bg-white', 'p-4', 'rounded-lg', 'shadow', 'text-gray-700', 'hover:bg-indigo-100', 'focus:outline-none', 'focus:ring-2', 'focus:ring-indigo-400');
+                card.textContent = option;
+                card.dataset.index = index; // 將原始索引存儲在 data 屬性中
+                card.onclick = () => handleAnswer(index, card);
+                optionsGrid.appendChild(card);
+            });
+
+             feedbackMessage.textContent = ''; // 清空上一題的回饋
+        }
+
+        // 處理使用者答案
+        function handleAnswer(selectedIndex, selectedCard) {
+            // 防止重複點擊
+            const optionCards = optionsGrid.querySelectorAll('.option-card');
+            optionCards.forEach(card => card.disabled = true); // 禁用所有按鈕
+            optionCards.forEach(card => card.classList.add('disabled')); // 添加視覺禁用樣式
+
+            const currentQuestion = currentProverbs[currentQuestionIndex];
+            const correctIndex = currentQuestion.correct_answer;
+            const isCorrect = selectedIndex === correctIndex;
+
+            // 記錄答案
+            userAnswers.push({
+                proverb_taigi: currentQuestion.proverb_taigi,
+                proverb_lomaji: currentQuestion.proverb_lomaji,
+                userAnswer: currentQuestion.options[selectedIndex],
+                correctAnswerText: currentQuestion.options[correctIndex],
+                explanation: currentQuestion.explanation,
+                isCorrect: isCorrect
+            });
+
+            // 顯示回饋和效果
+            if (isCorrect) {
+                score += 10; // 每題10分
+                selectedCard.classList.add('glow-correct', 'border-green-500', 'border-2');
+                selectedCard.classList.remove('bg-white', 'hover:bg-indigo-100');
+                selectedCard.classList.add('bg-green-100');
+                feedbackMessage.textContent = '答對了！ 🎉 ' + currentQuestion.explanation;
+                feedbackMessage.classList.remove('text-red-500');
+                feedbackMessage.classList.add('text-green-600');
+            } else {
+                selectedCard.classList.add('glow-incorrect', 'border-red-500', 'border-2');
+                 selectedCard.classList.remove('bg-white', 'hover:bg-indigo-100');
+                 selectedCard.classList.add('bg-red-100');
+                feedbackMessage.textContent = '答錯了... 🤔 正確答案是：' + currentQuestion.options[correctIndex];
+                feedbackMessage.classList.remove('text-green-600');
+                feedbackMessage.classList.add('text-red-500');
+
+                // 同時標示正確答案 (可選)
+                const correctCard = optionsGrid.querySelector(`.option-card[data-index='${correctIndex}']`);
+                 if(correctCard) {
+                     correctCard.classList.add('border-green-500', 'border-2', 'bg-green-50');
+                     correctCard.classList.remove('bg-white', 'hover:bg-indigo-100');
+                 }
+            }
+
+            // 更新分數顯示
+            progressText.textContent = `第 ${currentQuestionIndex + 1} 題 / 共 ${currentProverbs.length} 題 | 分數: ${score}`;
+
+
+            // 短暫延遲後進入下一題
+            setTimeout(() => {
+                currentQuestionIndex++;
+                displayQuestion();
+                 // 恢復按鈕狀態 (在 displayQuestion 內部會重新生成，所以這裡不用恢復)
+            }, 2500); // 延遲 2.5 秒
+        }
+
+        // 顯示最終結果
+        function showResults() {
+            gameArea.classList.add('hidden');
+            resultsArea.classList.remove('hidden');
+
+            finalScoreEl.textContent = `您的得分是：${score} / ${currentProverbs.length * 10} 分`;
+
+            // 生成結果分析
+            resultsDetails.innerHTML = ''; // 清空舊的結果
+            userAnswers.forEach((result, index) => {
+                const resultItem = document.createElement('div');
+                resultItem.classList.add('mb-4', 'pb-4', 'border-b', 'border-gray-200');
+                resultItem.innerHTML = `
+                    <p class="font-semibold">${index + 1}. ${result.proverb_taigi} (${result.proverb_lomaji})</p>
+                    <p class="text-sm ${result.isCorrect ? 'text-green-600' : 'text-red-600'}">
+                        您的答案：${result.userAnswer} ${result.isCorrect ? '✔' : '✘'}
+                    </p>
+                    ${!result.isCorrect ? `<p class="text-sm text-blue-600">正確答案：${result.correctAnswerText}</p>` : ''}
+                     <p class="text-sm text-gray-500">解釋：${result.explanation}</p>
+                `;
+                resultsDetails.appendChild(resultItem);
+            });
+        }
+
+        // --- 事件監聽 ---
+        playAgainButton.addEventListener('click', initGame);
+
+        // --- 遊戲開始 ---
+        initGame();
+
+    </script>
+
+</body>
+</html>
+
